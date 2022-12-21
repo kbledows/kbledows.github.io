@@ -7,9 +7,14 @@
 
 body {
     background-color: #343a40;
+    margin: 0;
+    padding: 0;
+    /* background-image: url("material_design.png"); */
 }
 
 .nav-bar {
+    padding: 0;
+    margin: 0;
     Display: flex;
     justify-content: right;
     flex-direction: row;
@@ -24,6 +29,15 @@ body {
     margin: 8px;
     padding: 10px;
     transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+.intro img {
+    width: 30%;
+    border-radius: 50%
+}
+
+.intro h3 {
+    margin-top: 0.1em;
 }
 
 .nav-bar a:hover {
@@ -47,6 +61,17 @@ main {
     text-align: center;
     margin-left: 20%;
     margin-right: 20%;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#key_words {
+    color: #a2d2ff;
+    font-weight: bold;
+}
+
+#summary {
+    text-align: left;
+    text-align: justify;
 }
 
 hr {
@@ -61,7 +86,6 @@ hr {
 }
 
 h3 {
-    padding-bottom: 15px;
     letter-spacing: normal;
     font-family: var(--main-font-family);
     font-style: normal;
@@ -79,12 +103,15 @@ h3 {
     text-decoration: none;
 }
 
-#home a {
-    color: #a7c957;
+#home a,
+#info a,
+#projects a,
+#contact a {
+    color: #a2d2ff;
+    font-weight: bold;
 }
 
 #home a:hover {
-    color: #ffb703;
     cursor: pointer;
 }
 
@@ -94,4 +121,61 @@ h3 {
     padding-top: 2%;
     height: 100vh;
     justify-content: start;
+}
+
+footer {
+    bottom: 0;
+    background-color: #343a40;
+}
+
+.footer-bar {
+    Display: flex;
+    justify-content: left;
+    flex-direction: row;
+    align-self: flex-start;
+    padding-right: 5em;
+}
+
+.footer-bar a {
+    text-decoration: none;
+    font-size: 120%;
+    color: white;
+    margin: 8px;
+    padding: 10px;
+    transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+.footer-bar a:hover {
+    color: #a2d2ff;
+    filter: drop-shadow(0 0 7px #a2d2ff);
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+
+#card_list {
+    display: inline-flex;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 4em;
+    margin-top: 3em;
+    margin-left: 0.8em;
+    margin-right: 0.8em;
+}
+
+.card img {
+    border-radius: 5px 5px 0 0;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+    text-align: center;
 }
