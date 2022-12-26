@@ -248,7 +248,7 @@ footer {
 .down-arrow {
     position: absolute;
     filter: drop-shadow(0 0 7px #a2d2ff);
-    top: calc(100vh - 60px);
+    top: calc(100vh - 130px);
     left: calc(50% - 14px);
     width: 0;
     height: 30px;
