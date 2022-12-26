@@ -203,6 +203,7 @@ footer {
     main {
         margin-left: 15%;
         margin-right: 15%;
+
     }
 
     h3 {
@@ -236,5 +237,10 @@ footer {
     .nav-bar a {
         margin: 0.1em;
         padding: 0.1em;
+    }
+
+    .intro img {
+        width: 10em;
+        border-radius: 50%
     }
 }
