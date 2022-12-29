@@ -172,6 +172,7 @@ footer {
     align-self: flex-start;
     flex-wrap: wrap;
     margin-bottom: 3em;
+    margin-top: 3em;
 }
 
 .card {
@@ -313,5 +314,9 @@ footer {
         width: 100%;
         margin-bottom: 1em;
         border-radius: 1%;
+    }
+
+    .container_contact {
+        font-size: 0.7em;
     }
 }
